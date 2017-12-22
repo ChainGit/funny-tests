@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.TreeMap;
 
 /**
  * 大型文件查找（仅适合文本格式的行式存储数据）
@@ -105,7 +104,7 @@ public class LargeTxtFileSearch2 {
 						int hashCode = Math.abs(realHashValue) & BASE;
 						lineInfos = store.get(hashCode);
 						if (lineInfos == null) {
-							lineInfos = new TreeMap<>();
+							lineInfos = new HashMap<>();
 							store.put(hashCode, lineInfos);
 						}
 						// realHashValue相同的加入列表
@@ -142,7 +141,7 @@ public class LargeTxtFileSearch2 {
 				int hashCode = Math.abs(realHashValue) & BASE;
 				lineInfos = store.get(hashCode);
 				if (lineInfos == null) {
-					lineInfos = new TreeMap<>();
+					lineInfos = new HashMap<>();
 					store.put(hashCode, lineInfos);
 				}
 				// realHashValue相同的加入列表
