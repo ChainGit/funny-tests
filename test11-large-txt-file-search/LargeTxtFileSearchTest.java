@@ -22,9 +22,9 @@ public class LargeTxtFileSearchTest {
 	private static final String path = "C:\\Temps\\large.txt";
 
 	// 总共的数据项数
-	private static final int RECORDS_NUM = 10_0000;
+	private static final int RECORDS_NUM = 1000_0000;
 	// 要查找的数据项
-	private static final int SEARCHS_NUM = 10;
+	private static final int SEARCHS_NUM = 100;
 
 	private static Map<Integer, String> searchs = null;
 
