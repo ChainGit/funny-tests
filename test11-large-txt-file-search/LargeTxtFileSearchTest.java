@@ -1,4 +1,4 @@
-package com.chain.test.day09;
+package com.chain.test02;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
@@ -57,7 +57,9 @@ public class LargeTxtFileSearchTest {
 	}
 
 	private static Map<Integer, List<Integer>> fun(boolean fast) {
-		LargeTxtFileSearch fs = new LargeTxtFileSearch(path);
+		AbstractLargeTxtFileSearch fs = null;
+
+		fs = new LargeTxtFileSearch3(path);
 
 		System.out.println("START BUILDING");
 		long start = System.currentTimeMillis();

@@ -1,4 +1,4 @@
-package com.chain.test.day09;
+package com.chain.test02;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -15,7 +15,7 @@ import java.util.Map;
  * @author chain
  *
  */
-public class LargeTxtFileSearch {
+public class LargeTxtFileSearch extends AbstractLargeTxtFileSearch{
 
 	// 文本文件的路径
 	private String path;
